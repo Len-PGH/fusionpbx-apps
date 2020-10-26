@@ -11,7 +11,7 @@
 
 	//permission details
 		$y = 0;
-		$apps[$x]['permissions'][$y]['name'] = 'JitsiMeet';
+		$apps[$x]['permissions'][$y]['name'] = 'jitsimeet_view';
 		$apps[$x]['permissions'][$y]['groups'][] = 'superadmin';
 		//$apps[$x]['permissions'][$y]['groups'][] = 'user';
 		//$apps[$x]['permissions'][$y]['groups'][] = 'admin';
