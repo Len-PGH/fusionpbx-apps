@@ -1,7 +1,7 @@
 <?php
 	//application details
 		$apps[$x]['name'] = 'JitsiMeet';
-		$apps[$x]['uuid'] = 'cabf3f1f-a75b-4bb0-89a6-c6f1dc8e0da5';
+		$apps[$x]['uuid'] = '0e436409-1f0c-4e03-9af8-b8dcc4d1a0c0';
 		$apps[$x]['category'] = 'JitsiMeet';
 		$apps[$x]['subcategory'] = 'JitsiMeet';
 		$apps[$x]['version'] = '1.0';
