@@ -44,20 +44,10 @@
 	$language = new text;
 	$text = $language->get();
 
-//get the http post data
+//set the variables
 
-
-//process the http post data by action
-	
-
-//get the count
-
-
-//prepare to page the results
-
-
-//get the list
-
+$jitsimeet_domain = $_SESSION['jitsimeet']['jitsimeet_domain']['text'];
+$jitsimeet_name = $_SESSION['jitsimeet']['jitsimeet_name']['text'];
 
 //create token
 	$object = new token;
