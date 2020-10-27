@@ -29,7 +29,7 @@
 	require_once "root.php";
 	require_once "resources/require.php";
 	require_once "resources/check_auth.php";
-	require_once "resources/paging.php";
+
 
 //check permissions
 	if (permission_exists('jitsimeet_view')) {
@@ -50,25 +50,25 @@
 	$jitsimeet_name = $_SESSION['jitsimeet']['jitsimeet_name']['text'];
 
 //create token
-	$object = new token;
-	$token = $object->create($_SERVER['PHP_SELF']);
+//	$object = new token;
+//	$token = $object->create($_SERVER['PHP_SELF']);
 
 //include the header
-	$document['title'] = $text['title-jitsimeet'];
-	require_once "resources/header.php";
+//	$document['title'] = $text['title-jitsimeet'];
+//	require_once "resources/header.php";
 
 //show the content
-	echo "<div class='action_bar' id='action_bar'>\n";
-	echo "	<div class='heading'><b>".$text['title-jitsimeet']." (".$num_rows.")</b></div>\n";
-  	echo '<iframe allow="camera; microphone; fullscreen; display-capture" src="https://'.$jitsimeet_domain.'/'.$jitsimeet_name.'" style="height: 100%; width: 100%; border: 0px;"></iframe>';
-//	echo '<iframe allow="camera; microphone; fullscreen; display-capture" src="https://'.$jitsimeet_domain.'/'.$jitsimeet_name.'" style="height: 100%; width: 100%; border: 0px;"></iframe>';
-	echo "</table>\n";
-	echo "<br />\n";
-	echo "<div align='center'>".$paging_controls."</div>\n";
-	echo "<input type='hidden' name='".$token['name']."' value='".$token['hash']."'>\n";
-	echo "</form>\n";
+//	echo "<div class='action_bar' id='action_bar'>\n";
+//	echo "	<div class='heading'><b>".$text['title-jitsimeet']." (".$num_rows.")</b></div>\n";
+ 
+
+//	echo "</table>\n";
+//	echo "<br />\n";
+//	echo "<div align='center'>".$paging_controls."</div>\n";
+//	echo "<input type='hidden' name='".$token['name']."' value='".$token['hash']."'>\n";
+//	echo "</form>\n";
 
 //include the footer
 	require_once "resources/footer.php";
-
+ 	echo '<iframe allow="camera; microphone; fullscreen; display-capture" src="https://'.$jitsimeet_domain.'/'.$jitsimeet_name.'" style="height: 100%; width: 100%; border: 0px;"></iframe>';
 ?>
