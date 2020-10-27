@@ -60,8 +60,8 @@
 //show the content
 	echo "<div class='action_bar' id='action_bar'>\n";
 	echo "	<div class='heading'><b>".$text['title-jitsimeet']." (".$num_rows.")</b></div>\n";
-  	echo '<iframe allow="camera; microphone; fullscreen; display-capture" src="https://$jitsimeet_domain/$jitsimeet_name" style="height: 100%; width: 100%; border: 0px;"></iframe>';
-
+  	echo '<iframe allow="camera; microphone; fullscreen; display-capture" src="https://'.$jitsimeet_domain.'/'.$jitsimeet_name.'" style="height: 100%; width: 100%; border: 0px;"></iframe>';
+//	echo '<iframe allow="camera; microphone; fullscreen; display-capture" src="https://'.$jitsimeet_domain.'/'.$jitsimeet_name.'" style="height: 100%; width: 100%; border: 0px;"></iframe>';
 	echo "</table>\n";
 	echo "<br />\n";
 	echo "<div align='center'>".$paging_controls."</div>\n";
