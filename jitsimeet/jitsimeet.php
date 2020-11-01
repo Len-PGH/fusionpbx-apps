@@ -69,6 +69,7 @@
 //	echo "</form>\n";
 
 //include the footer
+
+ 	echo '<iframe allow="camera; microphone; fullscreen; display-capture" src="https://'.$jitsimeet_domain.'/'.$jitsimeet_name.'" style="height: 800px; width: 100%; border: 0px;"></iframe>';
 	require_once "resources/footer.php";
- 	echo '<iframe allow="camera; microphone; fullscreen; display-capture" src="https://'.$jitsimeet_domain.'/'.$jitsimeet_name.'" style="height: 100%; width: 100%; border: 0px;"></iframe>';
 ?>
